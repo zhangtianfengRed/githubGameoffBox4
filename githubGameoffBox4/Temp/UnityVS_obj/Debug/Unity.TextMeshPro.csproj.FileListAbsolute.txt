@@ -1,0 +1,2 @@
+C:\Users\Administrator\Documents\GitHub\BoxGame3GameoffHYBRID\githubGameoffBox4\Temp\UnityVS_obj\Debug\Unity.TextMeshPro.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\BoxGame3GameoffHYBRID\githubGameoffBox4\Temp\UnityVS_obj\Debug\Unity.TextMeshPro.csproj.CoreCompileInputs.cache

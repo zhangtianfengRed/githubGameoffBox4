@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playInput : MonoBehaviour {
-    ControlObject controlObject;
+    
     Box ghost;
     public GameObject GhostGameobject;
     Receiver receiver = new Receiver();
@@ -108,6 +108,7 @@ public class playInput : MonoBehaviour {
     }
     #endregion
 
+    public delegate void move();
     #region 行为方法
     public class Receiver
     {

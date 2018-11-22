@@ -16,7 +16,9 @@ public class Map : MonoBehaviour {
 
         GROUND = new GameObject("GROUND");
         mapStart();
-
+        mapDataload(Boxgroup);
+        mapDataload(Targetgroup);
+        TestmapData();
     }
 	
 	// Update is called once per frame
@@ -73,15 +75,24 @@ public class Map : MonoBehaviour {
 
     void mapDataload(GameObject T)
     {
-        foreach(Transform i in T.transform)
+        foreach(Transform i in T.GetComponentInChildren<Transform>())
         {
             if (i != null)
             {
                 Vector2Int iVector = new Vector2Int((int)i.position.x, (int)i.position.y);
+                data[iVector.x, iVector.y] = new MapData();
                 data[iVector.x, iVector.y].Boxtag(i.gameObject);
             }
         }
     }
+    void TestmapData()
+    {
+        foreach(MapData u in data)
+        {
+            Debug.Log(u);
+        }
+    }
+
     class MapData
     {
         public GameObject Box { get; set; }
